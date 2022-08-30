@@ -43,7 +43,26 @@ ul li{
 ul li a{
     text-decoration: none;
     color: black;
+    padding-bottom: 5px;
+    position: relative;/**Para la animación**/
 }
+/**Animación en el menu**/
+ul li a:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #6e45c7;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+ul li a:hover:after{
+    width: 100%;
+    right: 0;
+}
+/**fin animación**/
 header img{
     display: none;
 }
