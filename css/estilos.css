@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor-index{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header"
+                         "texto imagen"
+                         "separador separador"
+                         "nmodelos nmodelos"
+                         "modelos modelos"
+                         "footer footer ";
+    grid-template-rows: 10vh 90vh 40vh 10vh 90vh 10vh;
+    grid-template-columns: 1fr 1fr;
+}
+header{
+    grid-area: header;
+    padding-right: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0 30px;
+}
+.logo span{
+    color:#6e45c7 ;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin-left: 30px;  
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+header img{
+    display: none;
+}
+
+/**===========================================**/
+
+.texto-main{
+    grid-area: texto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align:left;
+    align-items:flex-start;
+    padding-left: 20px;
+}
+.fabricamos{
+    font-size: 50px;
+}
+.texto-main p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.img-main{  
+   grid-area: imagen;
+   width: 100%;
+   background-image: linear-gradient(
+       0deg,
+       rgba(0,0,0,0.5),
+       rgba(0,0,0,0.5)
+   )
+   ,url(../imagenes/fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.boton{
+	background-color:#6e45c7;
+	border-radius:28px;
+	border:1px solid #5a12e0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:20px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #432866;
+}
+.boton:hover{
+	background-color:#500ccf;
+}
+.boton:active{
+	position:relative;
+	top:1px;
+}
+
+/**===========================================**/
+
+.separador{
+    grid-area: separador;
+    width: 100%;
+    background-color: #6e45c7;
+}
+
+/**===========================================**/
+
+.texto__principal{
+    grid-area: nmodelos;
+    text-align: center;
+}
+.texto__principal h2 {
+    font-family: Georgia;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nuestros__modelos{
+    grid-area: modelos;
+    display: flex;
+    justify-content: space-between;
+}
+.modelo{
+    width: 320px;
+    background-color: rgb(189, 198, 195);
+    padding: 0.5rem;
+}
+.modelo__imagen{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.modelo__imagen img{
+    width: 100%;
+}
+.modelo__info{
+    margin: 1.5rem;
+}
+.modelo__info h3{
+    font-size: 1.4rem;
+}
+
+/**===========================================**/
+
+footer{
+    grid-area: footer;
+    background-color: rgb(49, 44, 44);
+    color: white;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__footer{
+    display: inline-block;
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0 30px;
+}
+footer p{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+/**============PAGINA SOBRE NOSOTROS============**/
+.contenedor__sn{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header"
+                         "textosn textosn"
+                         "mainsn mainsn"
+                         "footer footer ";
+    grid-template-rows: 10vh 15vh 65vh 10vh;
+    grid-template-columns: 1fr 1fr;
+}
+.texto__sn{
+    grid-area: textosn;
+    text-align: center;
+}
+.main__sn{
+    grid-area: mainsn;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/**============PAGINA SERVICIOS============**/
+.contenedor-s{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header"
+                         "textos textos"
+                         "mains mains"
+                         "footer footer ";
+    grid-template-rows: 10vh 15vh 65vh 10vh;
+    grid-template-columns: 1fr 1fr;
+}
+.texto__s{
+    grid-area: textos;
+    text-align: center;
+}
+.main__s{
+    grid-area: mains;
+}
+.servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+/**============PAGINA RECURSOS============**/
+.contenedor-recursos{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header"
+                         "mainr mainr"
+                         "footer footer ";
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: 1fr 1fr;
+}
+.main__recursos{
+    grid-area: mainr;
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.main__recursos p{
+    font-size: 2em;
+}
+
+/**============PAGINA CONTACTO============**/
+
+.contenedor-contacto{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header"
+                         "texto texto"
+                         "mapa formulario"                  
+                         "footer footer ";
+    grid-template-rows: 10vh 10vh 80vh 10vh;
+    grid-template-columns: 1fr 1fr;
+  
+}
+
+.texto__contacto{
+    grid-area: texto;
+    text-align: center;
+}
+.mapa{
+    grid-area:mapa;
+    width: 90%;
+    margin: 0 auto;
+}
+.formulario{
+    grid-area: formulario;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   
+}
+.btn__enviar{
+    display: block;
+    background-color:#6e45c7;
+	border-radius:24px;
+	border:1px solid #5a12e0;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:16px;
+	padding:14px 21px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #432866;
+}
+.btn__enviar:hover {
+	background-color:#500ccf;
+}
+.btn__enviar:active {
+	position:relative;
+	top:1px;
+}
+
+/**============MEDIA QUERIES============**/
+@media screen and (max-width:854px){
+    .contenedor-index{
+        display: grid;
+        width: 100%;
+        grid-template-areas: "header header"
+                             "texto texto"
+                             "separador separador"
+                             "nmodelos nmodelos"
+                             "modelos modelos"
+                             "footer footer ";
+        grid-template-rows: 10vh 90vh 40vh 10vh 90vh 10vh;
+        grid-template-columns: 1fr 1fr;
+    }
+    .texto-main{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .fabricamos{
+        width: 100%;
+        color: white;
+    }
+    .texto-main p{
+        color: white;
+    }
+    .img-main{
+        display: none;
+    }
+    .texto-main{
+       
+        margin: 0 auto;
+    }
+    .fabricamos{
+        font-size: 30px;
+    }
+    .texto-main p{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    header img{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+    nav{
+        display: none;
+    }
+    .texto__principal h2 {
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .nuestros__modelos{
+        display: flex;
+        overflow-y: auto;
+    }
+    .mapa{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .formulario{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .formulario p{
+        width: 80%;
+    }
+    .main__sn{
+        overflow-y: auto;
+    }
+    .main__recursos{
+        flex-direction: column;
+    }
+    .main__s{
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width:320px){
+    .contenedor-index{
+        display: grid;
+        width: 100%;
+        grid-template-areas: "header header"
+                             "texto texto"
+                             "separador separador"
+                             "nmodelos nmodelos"
+                             "modelos modelos"
+                             "footer footer ";
+       grid-template-rows: 10vh 90vh 40vh 10vh 90vh 10vh;
+       grid-template-columns: 1fr 1fr;   
+    }
+    .texto-main{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+    .fabricamos{
+        font-size: 30px;
+    }
+    .img-main{
+        display: none;
+    }
+    .texto__principal h2 {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contenedor-contacto{
+        display: grid;
+        width: 100%;
+        grid-template-areas: "header header"
+                             "texto texto"
+                             "formulario formulario"                  
+                             "footer footer";
+        grid-template-rows: 8vh 20vh 80vh 8vh;
+        grid-template-columns: 1fr 1fr;
+    }
+    header{
+        grid-area: header;
+    }
+    .logo{
+        font-size: 30px;
+        padding: 0 15px;
+    }
+
+    nav{
+        display: none;
+    }
+    .texto__contacto{
+        grid-area: texto;
+        text-align: center;
+    }
+    .texto__contacto h1{
+        font-size: 25px;
+        padding-top: 20px;
+    } 
+    .nuestros__modelos{
+        grid-area: modelos;
+        display: flex;
+        overflow-y: auto;
+    }
+    .modelo{
+        width: 300px;
+        height: 350px;
+        margin-right: 10px;
+    }
+    .modelo__imagen{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .modelo__imagen img{
+        width: 100%;
+    }
+    .modelo__info h3{
+        font-size: 1rem;
+    }
+
+    .mapa{
+        display: none;
+       
+    }
+    .formulario{
+        width: 80%;
+        grid-area: formulario;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+    }
+    .formulario h2{
+        font-size: 30px;
+    }
+    .btn__enviar{
+        margin: 0 auto;
+    }
+    footer{
+        grid-area: footer; 
+       
+    }
+    .logo__footer{
+        font-size: 30px;
+        padding: 0 15px;
+    }
+    footer p{
+        display: none;
+    }
+    .main__sn{
+        overflow-y: auto;
+    }
+    .main__recursos{
+        flex-direction: column;
+    }
+    .main__s{
+        overflow-y: auto;
+    }
+}
+
+
