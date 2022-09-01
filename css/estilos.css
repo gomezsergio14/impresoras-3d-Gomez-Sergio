@@ -19,11 +19,10 @@ header{
 	position:relative;
 	top:1px;
 }
-/**.separador{
-    /**grid-area: separador;
-    width: 100%;
+.separador{
+    height: 300px;
     background-color: #6e45c7;
-}**/
+}
 /**
 *{
     margin: 0;
