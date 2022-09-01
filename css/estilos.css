@@ -1,8 +1,29 @@
 .navbar-brand span{
     color:#6e45c7 ;
 }
-
-
+header{
+    height: 10vh;
+}
+.contenedor-hero{
+    height: 90vh;
+}
+.boton{
+	background-color:#6e45c7;
+    border:1px solid #5a12e0;
+}
+.boton:hover{
+	background-color:#500ccf;
+    border:1px solid #5a12e0;
+}
+.boton:active{
+	position:relative;
+	top:1px;
+}
+/**.separador{
+    /**grid-area: separador;
+    width: 100%;
+    background-color: #6e45c7;
+}**/
 /**
 *{
     margin: 0;
@@ -97,8 +118,9 @@ header img{
     padding-bottom: 1em;
 }
 .img-main{  
-   grid-area: imagen;
+   /**grid-area: imagen;**/
    width: 100%;
+   /**background-color: lightseagreen;**/
    background-image: linear-gradient(
        0deg,
        rgba(0,0,0,0.5),
@@ -108,6 +130,7 @@ header img{
    background-repeat: no-repeat;
    background-size: cover;
 }
+/**
 .boton{
 	background-color:#6e45c7;
 	border-radius:28px;
@@ -128,16 +151,12 @@ header img{
 	position:relative;
 	top:1px;
 }
-
+**/
 /**===========================================**/
 
-.separador{
-    grid-area: separador;
-    width: 100%;
-    background-color: #6e45c7;
-}
 
-/**===========================================**/
+
+
 
 .texto__principal{
     grid-area: nmodelos;
