@@ -7,6 +7,32 @@ header{
 .contenedor-hero{
     height: 90vh;
 }
+.texto-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align:left;
+    align-items:flex-start;
+    padding-left: 20px;
+}
+.fabricamos{
+    font-size: 50px;
+}
+.texto-main p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.img-main{  
+   width: 100%;
+   background-image: linear-gradient(
+       0deg,
+       rgba(0,0,0,0.5),
+       rgba(0,0,0,0.5)
+   )
+   ,url(../imagenes/fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 .boton{
 	background-color:#6e45c7;
     border:1px solid #5a12e0;
@@ -22,6 +48,9 @@ header{
 .separador{
     height: 300px;
     background-color: #6e45c7;
+}
+#nuestros__modelos{
+    height: 10vh;
 }
 /**
 *{
@@ -100,35 +129,7 @@ header img{
 
 /**===========================================**/
 
-.texto-main{
-    grid-area: texto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align:left;
-    align-items:flex-start;
-    padding-left: 20px;
-}
-.fabricamos{
-    font-size: 50px;
-}
-.texto-main p{
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-.img-main{  
-   /**grid-area: imagen;**/
-   width: 100%;
-   /**background-color: lightseagreen;**/
-   background-image: linear-gradient(
-       0deg,
-       rgba(0,0,0,0.5),
-       rgba(0,0,0,0.5)
-   )
-   ,url(../imagenes/fondo.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-}
+
 /**
 .boton{
 	background-color:#6e45c7;
