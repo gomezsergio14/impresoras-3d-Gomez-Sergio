@@ -15,7 +15,7 @@
     <header> 
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">LOGO<span>3D</span></a>
+              <a class="navbar-brand logo" href="../index.html">LOGO<span>3D</span></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,11 +42,11 @@
           </nav>
     </header>
     <main class="container-fluid">
-      <div class="row texto__contacto">
+      <div class="row texto__contacto mt-2">
         <h1 class="d-flex justify-content-center">CONTACTENOS</h1>
         <p class="d-flex justify-content-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </div>
-      <div class="row">
+      <div class="row mb-3">
         <div class="col">
           <iframe allowfullscreen='' frameborder='0' height='500' src='https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6808.717503731327!2d-64.1932784!3d-31.4317891!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v15351064588494' style='border:0' width='100%'></iframe>
         </div>
@@ -57,12 +57,13 @@
             <br>
             <h2>Formulario de contacto: </h2>
             <form method='post'>
-                <input name='nombre' placeholder='nombre y apellido' required='required' type='text' value=''/>
+                <input class="nombre mb-2" name='nombre' placeholder='nombre y apellido' required='required' type='text' value=''/>
                 <br>
-                <input name='email' placeholder='correo electrónico' required='required' type='text' value=''/>
+                <input class="email mb-2" name='email' placeholder='correo electrónico' required='required' type='text' value=''/>
                 <br>
                 <textarea name='message' placeholder='Su mensaje ...'></textarea>
-                <input class="btn__enviar" name='submit' type='submit' value='Enviar'/>
+                <br>
+                <input class="btn btn-primary boton" name='submit' type='submit' value='Enviar'/>
             </form> 
         </div>
         </div>

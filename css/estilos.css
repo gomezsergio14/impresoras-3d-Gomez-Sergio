@@ -4,6 +4,28 @@
 header{
     height: 10vh;
 }
+.logo{
+    font-size: 25px;
+}
+ul li a{
+    position: relative;/**Para la animación**/
+}
+/**Animación en el menu**/
+ul li a:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #6e45c7;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+ul li a:hover:after{
+    width: 100%;
+    right: 0;
+}
 .contenedor-hero{
     height: 90vh;
 }
@@ -52,80 +74,9 @@ header{
 #nuestros__modelos{
     height: 10vh;
 }
-/**
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-**/
-/**
-.contenedor-index{
-    display: grid;
-    width: 100%;
-    grid-template-areas: "header header"
-                         "texto imagen"
-                         "separador separador"
-                         "nmodelos nmodelos"
-                         "modelos modelos"
-                         "footer footer ";
-    grid-template-rows: 10vh 90vh 40vh 10vh 90vh 10vh;
-    grid-template-columns: 1fr 1fr;
-}**/
 
-/**
-header{
-    grid-area: header;
-    padding-right: 20px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-}
-.logo{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 40px;
-    padding: 0 30px;
-}
-.logo span{
-    color:#6e45c7 ;
-}
-ul{
-    list-style: none;
-}
-ul li{
-    display: inline-block;
-    margin-left: 30px;  
-}
-ul li a{
-    text-decoration: none;
-    color: black;
-    padding-bottom: 5px;
-    position: relative;/**Para la animación
-}
-/**Animación en el menu
-ul li a:after{
-    content: "";
-    width: 0;
-    height: 4px;
-    background-color: #6e45c7;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transition: all .5s;
-    will-change: width;
-}
-ul li a:hover:after{
-    width: 100%;
-    right: 0;
-}
-**/
-/**fin animación
-header img{
-    display: none;
-}**/
+
+
 
 /**===========================================**/
 
@@ -169,6 +120,7 @@ header img{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+/**
 .nuestros__modelos{
     grid-area: modelos;
     display: flex;
@@ -340,7 +292,9 @@ footer p{
 }
 
 **/
+
 /**============MEDIA QUERIES============**/
+
 @media screen and (max-width:854px){
     .contenedor-index{
         display: grid;
