@@ -112,125 +112,23 @@ footer p{
     padding-right: 20px;
 }
 
-/**============PAGINA SOBRE NOSOTROS============
-.contenedor__sn{
-    display: grid;
-    width: 100%;
-    grid-template-areas: "header header"
-                         "textosn textosn"
-                         "mainsn mainsn"
-                         "footer footer ";
-    grid-template-rows: 10vh 15vh 65vh 10vh;
-    grid-template-columns: 1fr 1fr;
+@media screen and (max-width:991px){
+    .img-main{
+        display: none;
+    }
+    .texto-hero{
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .texto-main{
+        color:whitesmoke
+    }
 }
-.texto__sn{
-    grid-area: textosn;
-    text-align: center;
-}
-.main__sn{
-    grid-area: mainsn;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-**/
-
-/**============PAGINA SERVICIOS============
-.contenedor-s{
-    display: grid;
-    width: 100%;
-    grid-template-areas: "header header"
-                         "textos textos"
-                         "mains mains"
-                         "footer footer ";
-    grid-template-rows: 10vh 15vh 65vh 10vh;
-    grid-template-columns: 1fr 1fr;
-}
-.texto__s{
-    grid-area: textos;
-    text-align: center;
-}
-.main__s{
-    grid-area: mains;
-}
-.servicios{
-    display: flex;
-    justify-content: space-between;
-}
-**/
-/**============PAGINA RECURSOS============
-.contenedor-recursos{
-    display: grid;
-    width: 100%;
-    grid-template-areas: "header header"
-                         "mainr mainr"
-                         "footer footer ";
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-template-columns: 1fr 1fr;
-}
-.main__recursos{
-    grid-area: mainr;
-    width: 100%;
-    padding-left: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-.main__recursos p{
-    font-size: 2em;
-}
-**/
-/**============PAGINA CONTACTO============
-
-.contenedor-contacto{
-    display: grid;
-    width: 100%;
-    grid-template-areas: "header header"
-                         "texto texto"
-                         "mapa formulario"                  
-                         "footer footer ";
-    grid-template-rows: 10vh 10vh 80vh 10vh;
-    grid-template-columns: 1fr 1fr;
-  
-}
-
-.texto__contacto{
-    grid-area: texto;
-    text-align: center;
-}
-.mapa{
-    grid-area:mapa;
-    width: 90%;
-    margin: 0 auto;
-}
-.formulario{
-    grid-area: formulario;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-   
-}
-.btn__enviar{
-    display: block;
-    background-color:#6e45c7;
-	border-radius:24px;
-	border:1px solid #5a12e0;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Georgia;
-	font-size:16px;
-	padding:14px 21px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #432866;
-}
-.btn__enviar:hover {
-	background-color:#500ccf;
-}
-.btn__enviar:active {
-	position:relative;
-	top:1px;
-}
-**/
