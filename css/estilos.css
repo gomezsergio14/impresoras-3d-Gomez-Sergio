@@ -111,7 +111,7 @@ footer p{
     display: inline-block;
     padding-right: 20px;
 }
-
+/**MEDIA QUERIES**/
 @media screen and (max-width:991px){
     .img-main{
         display: none;
