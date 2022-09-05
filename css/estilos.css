@@ -111,7 +111,22 @@ footer p{
     display: inline-block;
     padding-right: 20px;
 }
+/**===========================================**/
+
+/**PAGINA RECURSOS**/
+.recursos-main{
+    height: 120vh;
+    
+}
+
+
 /**MEDIA QUERIES**/
+@media screen and (max-width:1399px){
+
+}
+@media screen and (max-width:1199px){
+
+}
 @media screen and (max-width:991px){
     .img-main{
         display: none;
@@ -131,4 +146,12 @@ footer p{
     .texto-main{
         color:whitesmoke
     }
+   /** .recursos-main{
+        height: 120vh;
+    }**/
+}
+@media screen and (max-width:366px){
+    /**.recursos-main{
+        height: 140vh;
+    }**/
 }
