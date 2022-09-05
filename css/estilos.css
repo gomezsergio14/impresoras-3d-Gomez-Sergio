@@ -1,6 +1,9 @@
 .navbar-brand span{
     color:#6e45c7 ;
 }
+nav{
+    z-index: 10;
+}
 header{
     height: 10vh;
 }
@@ -113,6 +116,10 @@ footer p{
 }
 /**===========================================**/
 
+/**PAGINA SOBRE NOSOTROS**/
+.main-sobrenosotros{
+    height: 90vh;
+}
 /**PAGINA SERVICIOS**/
 .main-servicios{
     height: 90vh;
@@ -150,22 +157,15 @@ footer p{
     .texto-main{
         color:whitesmoke
     }
-   /** .recursos-main{
-        height: 120vh;
-    }**/
 }
 @media screen and (max-width:767px){
-    /**.recursos-main{
-        height: 140vh;
-    }**/
+   
 }
-@media screen and (max-width:575px){
-    /**.recursos-main{
-        height: 140vh;
-    }**/
+@media screen and (max-width:599px){
+    .main-servicios{
+        height: 100vh;
+    }
 }
 @media screen and (max-width:366px){
-    /**.recursos-main{
-        height: 140vh;
-    }**/
+    
 }
