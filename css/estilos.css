@@ -113,6 +113,10 @@ footer p{
 }
 /**===========================================**/
 
+/**PAGINA SERVICIOS**/
+.main-servicios{
+    height: 90vh;
+}
 /**PAGINA RECURSOS**/
 .recursos-main{
     height: 120vh;
@@ -148,6 +152,16 @@ footer p{
     }
    /** .recursos-main{
         height: 120vh;
+    }**/
+}
+@media screen and (max-width:767px){
+    /**.recursos-main{
+        height: 140vh;
+    }**/
+}
+@media screen and (max-width:575px){
+    /**.recursos-main{
+        height: 140vh;
     }**/
 }
 @media screen and (max-width:366px){
