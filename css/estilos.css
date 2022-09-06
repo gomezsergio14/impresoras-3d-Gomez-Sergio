@@ -132,12 +132,13 @@ footer p{
 
 
 /**MEDIA QUERIES**/
-@media screen and (max-width:1399px){
+/**@media screen and (max-width:1399px){
 
 }
 @media screen and (max-width:1199px){
 
 }
+**/
 @media screen and (max-width:991px){
     .img-main{
         display: none;
@@ -158,14 +159,16 @@ footer p{
         color:whitesmoke
     }
 }
+/**
 @media screen and (max-width:767px){
    
-}
+}**/
 @media screen and (max-width:599px){
     .main-servicios{
         height: 100vh;
     }
 }
+/**
 @media screen and (max-width:366px){
     
-}
+}**/
