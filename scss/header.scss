@@ -1,0 +1,37 @@
+.navbar-brand{
+    span{
+        color:#6e45c7 ;
+    }
+}
+nav{
+    z-index: 10;
+}
+header{
+   /** height: 5vh;**/
+    height: 10vh;
+}
+.logo{
+    font-size: 25px;
+}
+ul{
+    li{
+        a{
+            position: relative;/**Para la animación**/
+            &:after{/**Animación en el menu**/
+                content: "";
+                width: 0;
+                height: 4px;
+                background-color: #6e45c7;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                transition: all .5s;
+                will-change: width;
+            }
+            &:hover:after{
+                width: 100%;
+                right: 0;
+            }
+        }
+    }
+}

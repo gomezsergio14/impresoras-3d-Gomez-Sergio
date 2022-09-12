@@ -1,0 +1,70 @@
+.contenedor-hero{
+    height: 90vh;
+}
+.texto-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align:left;
+    align-items:flex-start;
+    padding-left: 20px;
+    p{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+.fabricamos{
+    font-size: 50px;
+}
+
+.img-main{  
+   width: 100%;
+   background-image: linear-gradient(
+       0deg,
+       rgba(0,0,0,0.5),
+       rgba(0,0,0,0.5)
+   )
+   ,url(../imagenes/fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.boton{
+	background-color:#6e45c7;
+    border:1px solid #5a12e0;
+    &:hover{
+        background-color:#500ccf;
+        border:1px solid #5a12e0;
+    }
+    &:active{
+        position:relative;
+	    top:1px;
+    }
+}
+
+.separador{
+    height: 300px;
+    background-color: #6e45c7;
+}
+#nuestros__modelos{
+    height: 10vh;
+}
+@media screen and (max-width:991px){
+    .img-main{
+        display: none;
+    }
+    .texto-hero{
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../imagenes/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .texto-main{
+        color:whitesmoke
+    }
+}

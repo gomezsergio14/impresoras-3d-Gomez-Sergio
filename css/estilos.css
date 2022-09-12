@@ -82,7 +82,7 @@ ul li a:hover:after{
 /******************************************/
 
 .texto__principal{
-    grid-area: nmodelos;
+   
     text-align: center;
 }
 .texto__principal h2 {
@@ -95,7 +95,7 @@ ul li a:hover:after{
 /**===========================================**/
 
 footer{
-    grid-area: footer;
+    
     background-color: rgb(49, 44, 44);
     color: white;  
     display: flex;

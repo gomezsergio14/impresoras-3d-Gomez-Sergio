@@ -1,0 +1,20 @@
+footer{
+    
+    background-color: rgb(49, 44, 44);
+    color: white;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        display: inline-block;
+        padding-right: 20px;
+    }
+}
+.logo__footer{
+    display: inline-block;
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0 30px;
+}
