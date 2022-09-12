@@ -1,6 +1,6 @@
 .navbar-brand{
     span{
-        color:#6e45c7 ;
+        color:$color-principal ;
     }
 }
 nav{
@@ -21,7 +21,7 @@ ul{
                 content: "";
                 width: 0;
                 height: 4px;
-                background-color: #6e45c7;
+                background-color: $color-principal;
                 position: absolute;
                 bottom: 0;
                 right: 50%;
