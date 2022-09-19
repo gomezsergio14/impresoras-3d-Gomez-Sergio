@@ -3,3 +3,9 @@ $color-secundario:#500ccf;
 $borde-boton:#5a12e0;
 /**MAP**/
 $vhtamano:("medio":90vh,"grande":100vh,"xgrande":120vh);
+/**MIXIN**/
+@mixin alineacion-flex ($jcontent) {
+    display: flex;
+    justify-content: $jcontent;
+    }
+   

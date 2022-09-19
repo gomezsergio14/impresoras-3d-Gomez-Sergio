@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /**MAP**/
+/**MIXIN**/
 .navbar-brand span {
   color: #6e45c7; }
 
@@ -116,13 +117,3 @@ footer {
 @media screen and (max-width: 599px) {
   .main-servicios {
     height: 100vh; } }
-
-.texto__principal {
-  text-align: center; }
-
-.texto__principal h2 {
-  font-family: Georgia;
-  font-size: 40px;
-  font-weight: bold;
-  padding-top: 20px;
-  padding-bottom: 20px; }

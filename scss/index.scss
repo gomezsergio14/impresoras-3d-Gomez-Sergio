@@ -1,9 +1,8 @@
 .contenedor-hero{
-    height: 90vh;
+    height: map-get($vhtamano , medio );
 }
 .texto-main{
-    display: flex;
-    justify-content: center;
+    @include alineacion-flex(center);
     flex-direction: column;
     text-align:left;
     align-items:flex-start;
@@ -53,8 +52,7 @@
         display: none;
     }
     .texto-hero{
-        display: flex;
-        justify-content: center;
+        @include alineacion-flex(center);
         background-image: linear-gradient(
             0deg,
             rgba(0,0,0,0.5),

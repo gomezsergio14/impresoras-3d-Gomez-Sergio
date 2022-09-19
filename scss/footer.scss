@@ -2,8 +2,7 @@ footer{
     
     background-color: rgb(49, 44, 44);
     color: white;  
-    display: flex;
-    justify-content: space-between;
+    @include alineacion-flex(space-between);
     align-items: center;
     p{
         display: inline-block;
