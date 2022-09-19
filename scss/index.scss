@@ -15,17 +15,9 @@
 .fabricamos{
     font-size: 50px;
 }
-
 .img-main{  
    width: 100%;
-   background-image: linear-gradient(
-       0deg,
-       rgba(0,0,0,0.5),
-       rgba(0,0,0,0.5)
-   )
-   ,url(../imagenes/fondo.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
+   @extend .imagen-de-fondo;
 }
 .boton{
 	background-color: $color-principal;
