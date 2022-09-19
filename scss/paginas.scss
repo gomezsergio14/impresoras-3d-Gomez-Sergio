@@ -1,23 +1,22 @@
 /**PAGINA SOBRE NOSOTROS**/
 .main-sobrenosotros{
-    height: 90vh;
+    height: map-get($vhtamano , medio );
 }
 /**PAGINA SERVICIOS**/
 .main-servicios{
-    height: 90vh;
+    height: map-get($vhtamano , medio );
 }
 /**PAGINA RECURSOS**/
 .recursos-main{
-    height: 120vh;
+    height: map-get($vhtamano , xgrande );
     
 }
 @media screen and (max-width:599px){
     .main-servicios{
-        height: 100vh;
+        height: map-get($vhtamano , grande );
     }
 }
 .texto__principal{
-   
     text-align: center;
 }
 .texto__principal h2 {
