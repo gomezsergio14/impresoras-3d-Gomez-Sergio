@@ -1,0 +1,13 @@
+SEO
+--Agregué keywords al proyecto, las que utilicé son: 
+	impresión 3d impresora cartesiana delta modelado escaneo diseño industrial electrónica
+
+--Modifiqué los titulos de cada página
+
+--Agregué descripciones a todas las páginas
+
+--Modifiqué las etiquetas h, usé una sola etiqueta h1 por página
+
+SASS
+Para el segundo desafío de sass armé un mixin, un map y un extend, las definiciones estan en el archivo variables.scss
+
