@@ -1,0 +1,29 @@
+/**PAGINA SOBRE NOSOTROS**/
+.main-sobrenosotros{
+    height: 90vh;
+}
+/**PAGINA SERVICIOS**/
+.main-servicios{
+    height: 90vh;
+}
+/**PAGINA RECURSOS**/
+.recursos-main{
+    height: 120vh;
+    
+}
+@media screen and (max-width:599px){
+    .main-servicios{
+        height: 100vh;
+    }
+}
+.texto__principal{
+   
+    text-align: center;
+}
+.texto__principal h2 {
+    font-family: Georgia;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
