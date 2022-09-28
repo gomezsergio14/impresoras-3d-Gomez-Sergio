@@ -106,9 +106,14 @@ footer {
     color: whitesmoke; } }
 
 /**PAGINA SOBRE NOSOTROS**/
-.main-sobrenosotros {
-  height: 90vh; }
+.bodysn {
+  min-height: 100vh; }
 
+/**
+.main-sobrenosotros{
+    height: map-get($vhtamano , medio );
+}
+**/
 .contenido {
   height: 80%;
   width: 80%; }
