@@ -88,7 +88,79 @@ footer {
 
 .separador {
   height: 300px;
-  background-color: #6e45c7; }
+  background-color: #6e45c7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "cuadro1 cuadro2 cuadro3" "cuadro4 cuadro5 cuadro6"; }
+
+.cuadro1 {
+  grid-area: cuadro1;
+  /**color: #deaefa;**/
+  color: white;
+  text-align: center;
+  /**font-family: 'Roboto', sans-serif;**/
+  font-size: 75px; }
+
+.cuadro1 p {
+  margin: 5px auto; }
+
+.cuadro2 {
+  grid-area: cuadro2;
+  /**color: #deaefa;**/
+  color: white;
+  text-align: center;
+  /**font-family: 'Roboto', sans-serif;**/
+  font-size: 75px; }
+
+.cuadro2 p {
+  margin: 5px auto; }
+
+.cuadro3 {
+  grid-area: cuadro3;
+  /**color: #deaefa;**/
+  color: white;
+  text-align: center;
+  /**font-family: 'Roboto', sans-serif;**/
+  font-size: 75px; }
+
+.cuadro3 p {
+  margin: 5px auto; }
+
+.cuadro4 {
+  grid-area: cuadro4;
+  /**color: #deaefa;**/
+  color: white;
+  text-align: center;
+  /**font-family: 'Roboto', sans-serif;**/
+  font-size: 40px; }
+
+.cuadro4 p {
+  margin: 5px auto; }
+
+.cuadro5 {
+  grid-area: cuadro5;
+  /**color: #deaefa;**/
+  color: white;
+  text-align: center;
+  /** font-family: 'Roboto', sans-serif;**/
+  font-size: 40px; }
+
+.cuadro5 p {
+  margin: 5px auto; }
+
+.cuadro6 {
+  grid-area: cuadro6;
+  /**color: #deaefa;**/
+  color: white;
+  text-align: center;
+  /**font-family: 'Roboto', sans-serif;**/
+  font-size: 40px; }
+
+.cuadro6 p {
+  margin: 5px auto; }
 
 #nuestros__modelos {
   height: 10vh; }
@@ -103,8 +175,116 @@ footer {
     background-repeat: no-repeat;
     background-size: cover; }
   .texto-main {
-    color: whitesmoke; } }
+    color: whitesmoke; }
+  .separador {
+    height: 400px; }
+  .cuadro1 {
+    font-size: 75px; }
+  .cuadro2 {
+    font-size: 75px; }
+  .cuadro3 {
+    font-size: 75px; } }
 
+@media screen and (max-width: 961px) {
+  .separador {
+    height: 300px;
+    grid-template-rows: 100px 1fr; }
+  .cuadro1 {
+    font-size: 60px; }
+  .cuadro2 {
+    font-size: 60px; }
+  .cuadro3 {
+    font-size: 60px; } }
+
+@media screen and (max-width: 906px) {
+  .separador {
+    height: 300px;
+    grid-template-rows: 100px 1fr; }
+  .cuadro1 {
+    font-size: 50px; }
+  .cuadro2 {
+    font-size: 50px; }
+  .cuadro3 {
+    font-size: 50px; } }
+
+@media screen and (max-width: 768px) {
+  .separador {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "cuadro1 cuadro4" "cuadro2 cuadro5" "cuadro3 cuadro6"; }
+  .cuadro1 {
+    grid-area: cuadro1; }
+  .cuadro2 {
+    grid-area: cuadro2; }
+  .cuadro3 {
+    grid-area: cuadro3; }
+  .cuadro4 {
+    grid-area: cuadro4; }
+  .cuadro5 {
+    grid-area: cuadro5; }
+  .cuadro6 {
+    grid-area: cuadro6; } }
+
+@media screen and (max-width: 576px) {
+  .separador {
+    height: 600px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "cuadro1" "cuadro2" "cuadro3" "cuadro4" "cuadro5" "cuadro6"; }
+  .cuadro1 {
+    grid-area: cuadro1;
+    text-align: center;
+    font-size: 60px; }
+  .cuadro4 {
+    grid-area: cuadro2;
+    text-align: center;
+    font-size: 30px; }
+  .cuadro2 {
+    grid-area: cuadro3;
+    text-align: center;
+    font-size: 60px; }
+  .cuadro5 {
+    grid-area: cuadro4;
+    text-align: center;
+    font-size: 30px; }
+  .cuadro3 {
+    grid-area: cuadro5;
+    text-align: center;
+    font-size: 60px; }
+  .cuadro6 {
+    grid-area: cuadro6;
+    text-align: center;
+    font-size: 30px; } }
+
+/**
+  .cuadro1 p:hover{
+    color: white;
+  }
+  .cuadro2 p:hover{
+    color: white;
+  }
+  .cuadro3 p:hover{
+    color: white;
+  }
+  .cuadro4 p:hover{
+    color: white;
+  }
+  .cuadro5 p:hover{
+    color: white;
+  }
+  .cuadro6 p:hover{
+    color: white;
+  }**/
 /**PAGINA SOBRE NOSOTROS**/
 .bodysn {
   min-height: 100vh; }
@@ -129,9 +309,14 @@ footer {
   border-radius: 40px; }
 
 /**PAGINA SERVICIOS**/
-.main-servicios {
-  height: 90vh; }
+.bodyser {
+  min-height: 100vh; }
 
+/**
+.main-servicios{
+    height: map-get($vhtamano , medio );
+}
+**/
 /**PAGINA RECURSOS**/
 .recursos-main {
   height: 120vh; }
