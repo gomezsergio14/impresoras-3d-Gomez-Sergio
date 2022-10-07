@@ -378,6 +378,17 @@ img {
   width: 100%;
   height: 100%; }
 
+.btnDescarga {
+  background-color: #6e45c7;
+  color: white;
+  width: 90px;
+  border: 1px solid #5a12e0;
+  border-radius: 5px; }
+
+.btnDescarga:hover {
+  background-color: #500ccf;
+  border: 1px solid #5a12e0; }
+
 @media screen and (max-width: 991px) {
   .carta {
     flex-direction: column;
