@@ -39,8 +39,118 @@
     height: map-get($vhtamano , xgrande );
     
 }
+.recursos {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "manual1 guia1 firmware1"
+      "manual2 guia2 firmware2"
+      "manual3 guia3 firmware3";
+  }
+  
+  .manual1 { 
+             grid-area: manual1;
+            }
+  
+  .guia1 {   
+             grid-area: guia1;
+            }
+  
+  .firmware1 {
+             grid-area: firmware1;
+            }
+  
+  .manual2 { 
+             grid-area: manual2;
+            }
+  
+  .guia2 { 
+             grid-area: guia2;
+            }
+  
+  .firmware2 {
+             grid-area: firmware2;
+            }
+  
+  .manual3 { 
+             grid-area: manual3;
+            }
+  
+  .guia3 { 
+             grid-area: guia3;
+            }
+  
+  .firmware3 {
+             grid-area: firmware3;
+            }
+            .carta{
+                display: flex;
+                margin: 10px auto;
+                width: 310px;
+                height: 150px;
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+            .imagen{
+                width: 145px;
+                height: 100%;
+            }
+            img{
+                width: 100%;
+                height: 100%; 
+            }
+            .carta .texto h3{
+                margin-top: 10px;
+            }
+@media screen and (max-width:991px){
+    .carta{
+        flex-direction: column;
+        width: 160px;
+        height: 250px;
+    }
+    .imagen{
+        width: 145px;
+        height: 60%;
+    }
+    .texto{
+        height: 25%;
+        margin: 0 auto;
+    }
+    .carta .texto h3{
+        margin-top: 5px;
+    }
+}
 @media screen and (max-width:599px){
     .main-servicios{
         height: map-get($vhtamano , grande );
     }
 }
+
+@media screen and (max-width:576px){
+    .recursos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 10px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "manual1"
+          "guia1"
+          "firmware1"
+          "manual2"
+          "guia2"
+          "firmware2"
+          "manual3"
+          "guia3"
+          "firmware3";
+      }
+}
+
+
+
+
