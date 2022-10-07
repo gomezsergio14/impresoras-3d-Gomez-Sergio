@@ -318,9 +318,13 @@ footer {
 }
 **/
 /**PAGINA RECURSOS**/
-.recursos-main {
-  height: 120vh; }
+.bodyrec {
+  min-height: 100vh; }
 
+/*.recursos-main{
+    height: map-get($vhtamano , xgrande );
+    
+}*/
 .recursos {
   height: 100%;
   display: grid;
