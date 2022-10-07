@@ -91,7 +91,7 @@
   .firmware3 {
              grid-area: firmware3;
             }
-            .carta{
+.carta{
                 display: flex;
                 margin: 10px auto;
                 width: 310px;
@@ -99,34 +99,35 @@
                 border: 2px solid black;
                 border-radius: 10px;
             }
-            .imagen{
+.imagen{
                 width: 145px;
                 height: 100%;
             }
-            img{
+img{
                 width: 100%;
                 height: 100%; 
             }
-            .carta .texto h3{
-                margin-top: 10px;
-            }
+// .carta .texto h3{
+//                 margin-top: 10px;
+//             }
 @media screen and (max-width:991px){
     .carta{
         flex-direction: column;
-        width: 160px;
-        height: 250px;
+        width: 190px;
+        height: 300px;
     }
     .imagen{
         width: 145px;
-        height: 60%;
+        height: 50%;
+        margin-left: 24px;
     }
     .texto{
         height: 25%;
         margin: 0 auto;
     }
-    .carta .texto h3{
-        margin-top: 5px;
-    }
+    // .carta .texto h3{
+    //     margin-top: 5px;
+    // }
 }
 @media screen and (max-width:599px){
     .main-servicios{
