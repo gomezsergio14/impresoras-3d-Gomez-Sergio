@@ -2,13 +2,13 @@
 .bodysn{
     min-height: 100vh;
 }
-/**
+
 .main-sobrenosotros{
     height: map-get($vhtamano , medio );
 }
-**/
+
 .contenido{
-   height: 80%;
+   height: 80%;/*80%*/
    width: 80%;
     .texto-sn{
         max-width: 550px;
@@ -107,9 +107,7 @@ img{
                 width: 100%;
                 height: 100%; 
             }
-// .carta .texto h3{
-//                 margin-top: 10px;
-//             }
+
 .btnDescarga{
     background-color: #6e45c7;
     color: white;

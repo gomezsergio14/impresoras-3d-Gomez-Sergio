@@ -52,7 +52,7 @@ footer {
   display: inline-block;
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: 30px;
   padding: 0 30px; }
 
@@ -289,13 +289,12 @@ footer {
 .bodysn {
   min-height: 100vh; }
 
-/**
-.main-sobrenosotros{
-    height: map-get($vhtamano , medio );
-}
-**/
+.main-sobrenosotros {
+  height: 90vh; }
+
 .contenido {
   height: 80%;
+  /*80%*/
   width: 80%; }
   .contenido .texto-sn {
     max-width: 550px; }
