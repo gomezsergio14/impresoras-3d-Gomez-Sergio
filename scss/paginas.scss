@@ -1,29 +1,22 @@
 /**PAGINA SOBRE NOSOTROS**/
-.bodysn{
-    min-height: 100vh;
+.conocenos{
+    text-align: center;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+.imgx{
+    width: 350px;
+    height: 300px;
+    background-color: blueviolet;
+}
+.imgx img{
+    width: 100%;
+    height: 100%;
 }
 
-.main-sobrenosotros{
-    height: map-get($vhtamano , medio );
-}
-
-.contenido{
-   height: 80%;/*80%*/
-   width: 80%;
-    .texto-sn{
-        max-width: 550px;
-        .p{
-            padding: 10px;
-          }
-             }
-}
-.imagen-de-equipo{
-    background-image: url(../imagenes/equipo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;   
-    border-radius: 40px;    
-
-}
 /**PAGINA SERVICIOS**/
 .bodyser{
     min-height: 100vh;
@@ -38,10 +31,6 @@
 .bodyrec{
     min-height: 100vh;
 }
-/*.recursos-main{
-    height: map-get($vhtamano , xgrande );
-    
-}*/
 .recursos {
     height: 100%;
     display: grid;
@@ -56,49 +45,49 @@
       "manual3 guia3 firmware3";
   }
   
-  .manual1 { 
+.manual1 { 
              grid-area: manual1;
             }
   
-  .guia1 {   
+.guia1 {   
              grid-area: guia1;
             }
   
-  .firmware1 {
+.firmware1 {
              grid-area: firmware1;
             }
   
-  .manual2 { 
+.manual2 { 
              grid-area: manual2;
             }
   
-  .guia2 { 
+.guia2 { 
              grid-area: guia2;
             }
   
-  .firmware2 {
+.firmware2 {
              grid-area: firmware2;
             }
   
-  .manual3 { 
+.manual3 { 
              grid-area: manual3;
             }
   
-  .guia3 { 
+.guia3 { 
              grid-area: guia3;
             }
   
-  .firmware3 {
+.firmware3 {
              grid-area: firmware3;
             }
-.carta{
-                display: flex;
-                margin: 10px auto;
-                width: 310px;
-                height: 150px;
-                border: 2px solid black;
-                border-radius: 10px;
-            }
+.carta {
+        display: flex;
+        margin: 10px auto;
+        width: 310px;
+        height: 150px;
+        border: 2px solid black;
+        border-radius: 10px;
+        }
 .imagen{
                 width: 145px;
                 height: 100%;
@@ -119,7 +108,13 @@ img{
     background-color: #500ccf;
     border: 1px solid #5a12e0;
 }
-
+@media screen and (max-width:1100px){
+    .imgx{
+        width: 250px;
+        height: 250px;
+       
+    }
+}
 @media screen and (max-width:991px){
     .carta{
         flex-direction: column;
@@ -135,9 +130,26 @@ img{
         height: 25%;
         margin: 0 auto;
     }
-    // .carta .texto h3{
-    //     margin-top: 5px;
-    // }
+ 
+}
+@media screen and (max-width:800px){
+    .imgx{
+        width: 200px;
+        height: 200px;
+       
+    }
+}
+@media screen and (max-width:642px){
+    .imagenes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+    }
+    .imgx{
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+    }
 }
 @media screen and (max-width:599px){
     .main-servicios{

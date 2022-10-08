@@ -286,26 +286,22 @@ footer {
     color: white;
   }**/
 /**PAGINA SOBRE NOSOTROS**/
-.bodysn {
-  min-height: 100vh; }
+.conocenos {
+  text-align: center; }
 
-.main-sobrenosotros {
-  height: 90vh; }
+.imagenes {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px; }
 
-.contenido {
-  height: 80%;
-  /*80%*/
-  width: 80%; }
-  .contenido .texto-sn {
-    max-width: 550px; }
-    .contenido .texto-sn .p {
-      padding: 10px; }
+.imgx {
+  width: 350px;
+  height: 300px;
+  background-color: blueviolet; }
 
-.imagen-de-equipo {
-  background-image: url(../imagenes/equipo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 40px; }
+.imgx img {
+  width: 100%;
+  height: 100%; }
 
 /**PAGINA SERVICIOS**/
 .bodyser {
@@ -320,10 +316,6 @@ footer {
 .bodyrec {
   min-height: 100vh; }
 
-/*.recursos-main{
-    height: map-get($vhtamano , xgrande );
-    
-}*/
 .recursos {
   height: 100%;
   display: grid;
@@ -388,6 +380,11 @@ img {
   background-color: #500ccf;
   border: 1px solid #5a12e0; }
 
+@media screen and (max-width: 1100px) {
+  .imgx {
+    width: 250px;
+    height: 250px; } }
+
 @media screen and (max-width: 991px) {
   .carta {
     flex-direction: column;
@@ -400,6 +397,21 @@ img {
   .texto {
     height: 25%;
     margin: 0 auto; } }
+
+@media screen and (max-width: 800px) {
+  .imgx {
+    width: 200px;
+    height: 200px; } }
+
+@media screen and (max-width: 642px) {
+  .imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .imgx {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px; } }
 
 @media screen and (max-width: 599px) {
   .main-servicios {
