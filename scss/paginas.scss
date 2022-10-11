@@ -99,6 +99,13 @@ img{
     background-color: #500ccf;
      border: 1px solid #5a12e0;
  }
+/**PAGINA CONTACTO**/
+form{
+    textarea{
+        min-height: 100px;
+        max-height: 100px;
+    }
+}
 @media screen and (max-width:1100px){
     .imgx{
         width: 250px;

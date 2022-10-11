@@ -46,10 +46,8 @@
 }
 .cuadro1 { 
     grid-area: cuadro1;
-    /**color: #deaefa;**/
     color: white;
     text-align: center;
-    /**font-family: 'Roboto', sans-serif;**/
     font-size: 75px;
     }
   .cuadro1 p{
@@ -57,7 +55,6 @@
     }
   .cuadro2 { 
     grid-area: cuadro2;
-    /**color: #deaefa;**/
     color: white;
     text-align: center;
     /**font-family: 'Roboto', sans-serif;**/
@@ -68,10 +65,8 @@
     } 
   .cuadro3 {
      grid-area: cuadro3;
-     /**color: #deaefa;**/
      color: white;
      text-align: center;
-     /**font-family: 'Roboto', sans-serif;**/
      font-size: 75px;
     }
   .cuadro3 p{
@@ -79,10 +74,8 @@
     }
   .cuadro4 {
      grid-area: cuadro4;
-     /**color: #deaefa;**/
      color: white;
      text-align: center;
-     /**font-family: 'Roboto', sans-serif;**/
      font-size: 40px;
     }
   .cuadro4 p{
@@ -90,10 +83,8 @@
     }
   .cuadro5 {
      grid-area: cuadro5; 
-     /**color: #deaefa;**/
      color: white;
      text-align: center;
-    /** font-family: 'Roboto', sans-serif;**/
      font-size: 40px;
     }
   .cuadro5 p{
@@ -101,10 +92,8 @@
     }
   .cuadro6 {
      grid-area: cuadro6; 
-     /**color: #deaefa;**/
      color: white;
      text-align: center;
-     /**font-family: 'Roboto', sans-serif;**/
      font-size: 40px;
     }
   .cuadro6 p{
@@ -247,22 +236,4 @@
         font-size: 30px;
     } 
   }
-  /**
-  .cuadro1 p:hover{
-    color: white;
-  }
-  .cuadro2 p:hover{
-    color: white;
-  }
-  .cuadro3 p:hover{
-    color: white;
-  }
-  .cuadro4 p:hover{
-    color: white;
-  }
-  .cuadro5 p:hover{
-    color: white;
-  }
-  .cuadro6 p:hover{
-    color: white;
-  }**/
+ 

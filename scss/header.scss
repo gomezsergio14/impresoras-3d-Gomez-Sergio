@@ -7,7 +7,6 @@ nav{
     z-index: 10;
 }
 header{
-   /** height: 5vh;**/
     height: 10vh;
 }
 .logo{
@@ -16,8 +15,8 @@ header{
 ul{
     li{
         a{
-            position: relative;/**Para la animación**/
-            &:after{/**Animación en el menu**/
+            position: relative;
+            &:after{
                 content: "";
                 width: 0;
                 height: 4px;
