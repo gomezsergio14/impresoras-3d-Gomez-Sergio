@@ -12,7 +12,10 @@ footer{
     display: inline-block;
     text-decoration: none;
     color: white; 
-    /*font-weight: bold;*/
     font-size: 30px;
     padding: 0 30px;
+    &:hover{
+        color: $color-principal;  
+    }
 }
+
