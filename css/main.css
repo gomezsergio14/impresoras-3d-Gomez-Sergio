@@ -307,11 +307,25 @@ footer {
 .bodyser {
   min-height: 100vh; }
 
-/**
-.main-servicios{
-    height: map-get($vhtamano , medio );
-}
-**/
+.servicios {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .servicios .cartaser {
+    display: flex;
+    width: 80%;
+    height: 250px; }
+    .servicios .cartaser .imagenser {
+      width: 100%;
+      height: 100%; }
+      .servicios .cartaser .imagenser img {
+        width: 100%;
+        height: 100%; }
+    .servicios .cartaser .textoser {
+      padding-left: 10px; }
+
 /**PAGINA RECURSOS**/
 .bodyrec {
   min-height: 100vh; }
@@ -398,6 +412,20 @@ img {
     height: 25%;
     margin: 0 auto; } }
 
+@media screen and (max-width: 900px) {
+  .servicios .cartaser {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    width: 80%;
+    height: 600px; }
+    .servicios .cartaser .imagenser {
+      width: 100%;
+      height: 70%; }
+      .servicios .cartaser .imagenser img {
+        width: 100%;
+        height: 100%; } }
+
 @media screen and (max-width: 800px) {
   .imgx {
     width: 200px;
@@ -418,6 +446,18 @@ img {
     height: 100vh; } }
 
 @media screen and (max-width: 576px) {
+  .servicios .cartaser {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    width: 80%;
+    height: 500px; }
+    .servicios .cartaser .imagenser {
+      width: 100%;
+      height: 50%; }
+      .servicios .cartaser .imagenser img {
+        width: 100%;
+        height: 100%; }
   .recursos {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
