@@ -320,7 +320,7 @@ footer {
     .servicios .cartaser .imagenser {
       width: 100%;
       height: 100%; }
-      .servicios .cartaser .imagenser img {
+      .servicios .cartaser .imagenser .imgser {
         width: 100%;
         height: 100%; }
     .servicios .cartaser .textoser {
@@ -422,7 +422,7 @@ img {
     .servicios .cartaser .imagenser {
       width: 100%;
       height: 70%; }
-      .servicios .cartaser .imagenser img {
+      .servicios .cartaser .imagenser .imgser {
         width: 100%;
         height: 100%; } }
 
@@ -455,7 +455,7 @@ img {
     .servicios .cartaser .imagenser {
       width: 100%;
       height: 50%; }
-      .servicios .cartaser .imagenser img {
+      .servicios .cartaser .imagenser .imgser {
         width: 100%;
         height: 100%; }
   .recursos {
